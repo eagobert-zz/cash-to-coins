@@ -7,8 +7,8 @@ const piggyBank = function(dollarAmount){
     let quarters = Math.floor(dollarAmount/.25);
     let dimes = Math.floor((dollarAmount-(quarters*.25))/.10);
     let nickels = Math.floor((dollarAmount-(quarters*.25)-(dimes*.10))/.05);
-    let pennies = Math.floor((dollarAmount-(quarters*.25)-(dimes*.10)-(nickels*.05))/.01);
-    //still working... pennies is 1 cent off.  need to reconfigure.
+    let pennies = Math.round((dollarAmount-(quarters*.25)-(dimes*.10)-(nickels*.05))/.01);
+
 
     return Object.create(null, {
 
