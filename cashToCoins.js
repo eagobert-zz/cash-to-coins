@@ -1,24 +1,28 @@
 //Define constant named "dollarAmount"
 const dollarAmount = 158.00;
+//Each change category converted to dollars
+    
+    let quarters = 
+    let nickels = 
+    let dimes = 
+    let pennies = 
 
 //Define constant named "piggyBank"
-const piggyBank = {
+const piggyBank = function(dollarAmount){
     
+    return Object.create(null, {
+
         //define keys of object "piggyBank"
-        quarters: ,
-        nickels: ,
-        dimes: ,
-        pennies: 
+        "Quarters": {value: , enumerable: true},
+        "Nickels": {value: ,enumerable: true},
+        "Dimes": {value: , enumerable: true},
+        "Pennies": {value: , enumerable: true}
+    })
     
     }
     
 /*
-    //Each change category converted to dollars
-    
-    let convQtrs = 
-    let convNick = 
-    let convDimes = 
-    let convPenn = 
+
     
     //Testing to view if calculation works
     console.log(convQtrs);
